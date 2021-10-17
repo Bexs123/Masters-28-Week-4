@@ -1,0 +1,21 @@
+Synchronous means one thing at a time in order.
+
+In JavaScript, Synchronous refers to our code executing one thing at a time.
+So the program waits until the current function has finished before moving on to the next.
+
+Asynchronous
+Asynchronous refers to the code not having to wait until a function has finished, before moving on to the next.
+
+JavaScript is a single threaded language. Which means it only has one call stack.
+
+Asynchronous JavaScript allows us to carry on down the call stack, without getting blocked by a slow function.
+
+Web APIs allow us to do additional stuff that isn't part of the JavaScript language. Code calls an API,
+which can do something and provide a response.
+
+setTimeOut is actully part of a web API provided by the browser. It is not part of the JavaScript language.
+
+setTimeOut where used to simulate the idea that some functions take time to complete.
+
+When functions take time, we need ways to handle them so our code doesn't have to wait.
+
