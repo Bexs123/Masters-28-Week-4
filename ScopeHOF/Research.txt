@@ -1,0 +1,23 @@
+Scope
+
+Scope is a feature in JavaScript. By Understanding scope , it will make your code stand out, 
+reduce errors and help you make powerful design with it.
+
+Scope is the accessibility of variables, functions, and objects 
+in some particular part of your code during runtime.
+
+Scope provides some level of security to your code.
+
+Scoping parts of your code helps improve efficiency, track bugs and reduce them.
+Scope also solves the naming problem when you variables with the same name but in different scopes.
+Scope and context they are both differentfeatures.
+
+There are two types of scopes this is Global and Local Scrope.
+Local Scrope is when variables are defined inside a function.
+Global Scope is when variables are defined outside the function.
+Each function when invoked creates a new scrope.
+
+
+Higher Order Functions
+
+A Higher Order function is a function that accepts functionsas parameters and/or returns a function.

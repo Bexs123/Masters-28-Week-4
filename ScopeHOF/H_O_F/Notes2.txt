@@ -1,0 +1,5 @@
+Higher Order Functions
+
+Higher order functions are functions which accept a function as a parameters
+OR
+Functions which return a function.

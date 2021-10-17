@@ -1,0 +1,55 @@
+Variable Scope
+
+There are three types of variable scope:-
+1. Global Scope
+2. Function Scope
+3. Block Scope
+
+Global Scope
+
+The global scope refers to the global namespace of the code. Any variable created inside the global scope
+can be accessed anywhere in it.
+
+Function Scope
+
+The function scope refers to the space within the curly braces of our function. Any variables declared in our function,
+can only be accessed from within this function.
+
+Scoping works outwords.
+When JS looks for a variable, it first searches the scope it is in, if it can't find it, it will move outwards
+and check the next scope, and keep moving outwards until it reaches the global scope - finally, if it can't find
+it in the global scope it will return a reference error.
+
+This is called the scope chain.
+
+Block Scope
+Block scope refers to a code block (between a pair of curly braces).
+Variables declared inside a block, can only be accessed from within the block.
+
+It's to do with how the memory heap stores our variable data.
+When you store a variable inside a function, it's only created (stored in memory) after you call the function.
+
+And then when the function has finished running, the variable is destoryed! (removed from the memory).
+
+The memory heap is part of the JavaScript engine where variable data gets stored. It's where memory
+allocation takes place when we create stuff.
+
+The call stack keeps track of our code as it executes.
+
+A local variable only exists in the memory when the function gets called, but is removed from the memory 
+when the function has finished.
+
+This is why we can't accesss variables outside the function's scope. They don't exist!
+
+As we move down our code - if the variable exists, we can access it.
+
+Global variables are not removed from the memoryin this way. That's why you may hear that global variables are dangerous!
+You run the the risk of using up all the memory.
+
+SO. Recap
+When a function runs and creates a local variable, it is stored in memory with a reference. When the function ends,
+the reference is removed and the memory allocation is freed.
+
+...However
+There is a pretty awesome way in JavaScript to retain a reference to local variable, even after a function has ended.
+It is called Closure.
